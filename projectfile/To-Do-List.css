@@ -1,0 +1,177 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+}
+
+.main{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  margin-top: 5px;
+  margin-left: 25%;
+
+}
+#edit-box {
+ display: none;
+}
+ 
+#add-to-do{
+ height: 25%; 
+ width: 50%; 
+ margin-top: 10%;
+ box-shadow: 3px 1px 2px 1px  gray;
+}
+
+  #submit{
+ box-shadow: 3px 2px 2px gray;
+ padding: 2px; width: 10%; 
+ height: 25%;
+ background-color: black;
+ color: white;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+small{
+color: rgb(13, 92, 92);
+font-size: 15px;
+margin-top: 3%
+}
+ 
+
+#to-do {
+display: none;
+
+}
+
+ h1{
+ font-weight: bolder; 
+ color: rgb(13, 92, 92);
+ font-size: 20px; 
+ margin: 10px;
+}
+
+#task{
+ font-size: 15px; 
+ text-align: center;
+ text-transform: capitalize; 
+ text-align: center;
+ margin: 5px;
+
+}
+
+#edit-box{
+ margin-left: 25%;
+
+
+}
+
+#edit-to-do{
+ height: 30px; 
+ width: 50%; 
+ margin-top: 10%;
+ box-shadow: 3px 1px 2px 1px  gray;
+
+}
+
+ 
+#save{
+ box-shadow: 3px 2px 2px gray;
+ padding: 2px; width: 5%; 
+ height: 30px;
+ background-color: black;
+ color: white;
+ border-radius: 5px; 
+ cursor: pointer;
+ 
+
+}
+
+#cancel{
+ box-shadow: 3px 2px 2px gray;
+ padding: 2px; width: 5%; 
+ height: 30px;
+ background-color: black;
+ color: white;
+ border-radius: 5px;
+  cursor: pointer;
+
+}
+
+td{
+ width: 5%;
+ padding:10px;
+
+ margin:5px;
+ border:none;
+
+}
+td:nth-child(2){
+ width: 95%;
+ background-color:rgb(237, 195, 70);
+ word-break: break-all;
+ text-align: left;
+  font-weight: 600;
+}
+
+td:nth-child(3){
+ background-color: rgb(37, 43, 41);
+ color: white;
+ cursor: pointer;
+ 
+}
+td:nth-child(4){
+ background-color: rgb(196, 34, 34);
+ color: white;
+ cursor: pointer;
+}
+td:nth-child(1){
+ background-color: rgb(6, 6, 6);
+ color: white;
+ 
+}
+
+@media screen and (max-width:600px) {
+ #edit-box,  .main{
+ margin-left: 10px;
+ margin-bottom: 10%;
+  height: 100px;
+  width: 100%;
+ };
+
+ .main form{
+  height: 100px;
+ }
+
+ #edit-to-do,  #add-to-do{
+ height: 30px;
+ width: 90%;
+ display: block;
+ };
+
+  #submit{
+margin-top: 5%;
+width: 30px;
+border-radius: 0;
+ };
+ 
+   #edit-box form{
+ margin-left: 10px;
+max-width: 100%;
+max-height: auto;
+  }
+  
+   #save{
+   padding-right: 10px;
+   width:30%; 
+   height: 30px;  
+
+   } ; 
+   #cancel{
+ width: 30%;
+   }
+  
+  
+}

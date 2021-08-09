@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        #edit-box{
-            display: none;
-        }
-    </style>
+<link rel="stylesheet" href="To-Do-List.css">
+    
 </head>
+
 <body>
-    <form action="javascript:void(0);" method="POST" onsubmit="app.add()"   >
-<input type="text" id="add-to-do" >
-<input type="submit" id=" submit">
+    <div class="main">
+        <!-- add task to list -->
+    <form action="javascript:void(0);" method="POST" onsubmit="app.add()">
+        <input type="text" id="add-to-do" >
+        <button type="submit"id="submit" >Add</button>
     </form>
- 
+    <small  >You Have :  <span id="counter" style="font-weight: 10px;"></span></small>
+</div>
 
-   <h5>You Have :</h5>
-   <p id="counter"></p>
+  
+   
+<!-- show the tasks list -->
+    <table id="to-do" width="90%">
 
-    <table id=" to-do">
-        
-           <thead>
-               <h1>To Do:</h1>
-           </thead>
-<tbody id="task" ></tbody>
-       
+        <thead>
+            <h1  >To Do List :</h1>
+            
+        </thead>
+        <tbody id="task"  ></tbody>
+
     </table>
-
-    <div id="edit-box">
-        <form id="save-edit" action="javascript:void(0);" method="POST">
-            <input type="text" id="edit-to-do">
-            <input type="submit" value="save" id="save-edit">
-            <input type='button' value="X" id="cancel" onclick="closeInput()" >
+<!-- edit the task  -->
+    <div id="edit-box" >
+        <form  id="save-edit" action="javascript:void(0);" method="POST">
+            <input type="text" id="edit-to-do" >
+            <input type="submit" value="save" id="save">
+            
+            <button type='button'  id="cancel" onclick="closeInput()"  >X</button>
         </form>
     </div>
-    <p id="demo"></p>
  
+<!-- external javascript file -->
     <script src="To-Do-List.js"></script>
 
-    
+
 </body>
+
 </html>
